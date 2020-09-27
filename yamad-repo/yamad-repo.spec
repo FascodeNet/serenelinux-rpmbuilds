@@ -7,7 +7,7 @@ License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 
-Source: yamad.repo.tar.gz
+Source: yamad-repo.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 
 %description
