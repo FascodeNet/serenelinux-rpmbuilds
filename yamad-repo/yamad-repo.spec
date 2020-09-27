@@ -20,8 +20,7 @@ rm -rf $RPM_BUILD_ROOT
 %build
 
 %install
-mkdir -p $RPM_BUILD_ROOT/etc/yum.repos.d/
-cp -arf ./yamad.repo $RPM_BUILD_ROOT/etc/yum.repos.d/
+cp -arf ./ $RPM_BUILD_ROOT/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
