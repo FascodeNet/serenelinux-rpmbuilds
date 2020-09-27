@@ -1,39 +1,39 @@
-%define name numix-blue-gtk-theme-bin
-%define version 1.0
-%define unmangled_version 1.0
-%define release 1
-%define _binaries_in_noarch_packages_terminate_build 0
+%define dist .el64
 
 Summary: numix-blue-gtk-theme-bin
-Name: %{name}
-Version: %{version}
-Release: %{release}
-License: MIT
-Source0: %{name}-%{unmangled_version}.tar.gz
-Group: Applications/File
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
-Prefix: %{_prefix}
-BuildArch: noarch
+Name: numix-blue-gtk-theme-bin
+Version: 1.0.0
+Release: 1%{?dist}
+Group: System Environment/Shells
+License: NONE
+Packager: kokkiemouse
+Vendor: INDETAIL
 
-%define INSTALLDIR %{buildroot}/usr/local/bin
+Source: numix-blue-gtk-theme-master.tar.gz
+BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
+Requires: 
 
 %description
-This is a sample program to learn how to make a rpm package.
-
+numix blue gtk
 %prep
-rm -rf ${RPM_BUILD_ROOT}
+rm -rf $RPM_BUILD_ROOT
+
+%setup -n %{name}
 
 %build
 
 %install
-rm -rf %{INSTALLDIR}
-mkdir -p %{INSTALLDIR}
-tar -C %{INSTALLDIR} -xzf  /root/rpmbuild/SOURCES/%{name}-%{unmangled_version}.tar.gz
+cp -arf ./* $RPM_BUILD_ROOT/*
 
 %clean
-rm -rf %{buildroot}
+rm -rf $RPM_BUILD_ROOT
+
+%post
+
+%postun
 
 %files
-/usr/local/bin
-%defattr(-,root,root)
- 
+
+%changelog
+* Fri OCT 28 2016 INDETAIL - 1.0.0
+- Initial release
