@@ -11,7 +11,6 @@ Vendor: INDETAIL
 
 Source: numix-blue-gtk-theme-master.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-Requires: 
 
 %description
 numix blue gtk
@@ -23,7 +22,7 @@ rm -rf $RPM_BUILD_ROOT
 %build
 
 %install
-cp -arf ./* $RPM_BUILD_ROOT/*
+cp -arf ./ $RPM_BUILD_ROOT/
 
 %clean
 rm -rf $RPM_BUILD_ROOT
