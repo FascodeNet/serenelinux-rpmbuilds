@@ -1,0 +1,4 @@
+[yamad]
+name=yamad Repo
+baseurl=https://d.0u0.biz/repo/serene_fedora/
+gpgcheck=0
