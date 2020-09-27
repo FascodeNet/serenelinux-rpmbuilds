@@ -33,7 +33,5 @@ rm -rf $RPM_BUILD_ROOT
 %postun
 
 %files
-
+/usr/share/themes/Numix-Blue
 %changelog
-* Fri OCT 28 2016 INDETAIL - 1.0.0
-- Initial release
