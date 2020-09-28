@@ -7,7 +7,7 @@ License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 
-Source: serenelinux-google-menus.tar.gz
+Source: serene-google-menus.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 
 %description
