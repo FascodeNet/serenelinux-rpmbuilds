@@ -1,6 +1,6 @@
 Summary: yamad repo
 Name: yamad-repo
-Version: 1.0.1
+Version: 1.0.2
 Release: 1%{?dist}
 Group: System Environment/Shells
 License: NONE
