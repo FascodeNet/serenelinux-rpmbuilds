@@ -1,5 +1,5 @@
-Summary: serenelinux google menus
-Name: serenelinux-google-menus
+Summary: serene google menus
+Name: serene-google-menus
 Version: 1.0.1
 Release: 1%{?dist}
 Group: User Interface/Desktops
@@ -11,7 +11,7 @@ Source: serene-google-menus.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 
 %description
-serenelinux-google-menus
+serene-google-menus
 %prep
 rm -rf $RPM_BUILD_ROOT
 
