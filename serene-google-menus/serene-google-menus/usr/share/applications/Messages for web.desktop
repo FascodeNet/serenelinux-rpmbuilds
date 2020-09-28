@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Messages for web
+Comment=Google's official app for texting (SMS, MMS) and chat (RCS). 
+Type=Application
+Exec=google-chrome --app=https://messages.google.com/web
+Icon=/usr/share/icons/google-app/Messenger_30026.png
+Categories=GTK;Categories=GTK;Office;

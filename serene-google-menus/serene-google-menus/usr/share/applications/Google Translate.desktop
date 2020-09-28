@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Google Translate
+Comment=A free multilingual machine translation service.
+Type=Application
+Exec=google-chrome --app=https://translate.google.com/
+Icon=/usr/share/icons/google-app/Tranlate_29992.png
+Categories=GTK;Office; 
