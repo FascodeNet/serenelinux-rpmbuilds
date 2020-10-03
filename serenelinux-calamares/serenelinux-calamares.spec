@@ -23,14 +23,15 @@
 %global kpmcore4 1
 %endif
 
-Name:           calamares
+Name:           serenelinux-calamares
 Version:        3.2.11
 Release:        12%{?snaphash:.%{snapdate}git%(echo %{snaphash} | cut -c -13)}%{!?snaphash:%{?prerelease:.%{prerelease}}}%{?dist}
 Summary:        Installer from a live CD/DVD/USB to disk
 
 License:        GPLv3+
 URL:            https://calamares.io/
-Source0:        https://github.com/calamares/calamares/%{?snaphash:archive}%{!?snaphash:releases/download}/%{?snaphash}%{!?snaphash:v%{version}%{?prerelease:-%{prerelease}}}/calamares-%{?snaphash}%{!?snaphash:%{version}%{?prerelease:-%{prerelease}}}.tar.gz
+# Source0:        https://github.com/calamares/calamares/%{?snaphash:archive}%{!?snaphash:releases/download}/%{?snaphash}%{!?snaphash:v%{version}%{?prerelease:-%{prerelease}}}/calamares-%{?snaphash}%{!?snaphash:%{version}%{?prerelease:-%{prerelease}}}.tar.gz
+Source0:        https://github.com/FascodeNet/serenelinux-calamares/archive/calamares.tar.gz#/serenelinux-calamares.tar.gz
 Source2:        show.qml
 # Run:
 # lupdate-qt5 show.qml -ts calamares-auto_fr.ts
