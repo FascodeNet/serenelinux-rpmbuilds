@@ -31,7 +31,7 @@ Summary:        Installer from a live CD/DVD/USB to disk
 License:        GPLv3+
 URL:            https://calamares.io/
 # Source0:        https://github.com/calamares/calamares/%{?snaphash:archive}%{!?snaphash:releases/download}/%{?snaphash}%{!?snaphash:v%{version}%{?prerelease:-%{prerelease}}}/calamares-%{?snaphash}%{!?snaphash:%{version}%{?prerelease:-%{prerelease}}}.tar.gz
-Source0:        https://github.com/FascodeNet/serenelinux-calamares/archive/calamares.tar.gz#/serenelinux-calamares.tar.gz
+Source0:        serenelinux-calamares.tar.gz
 Source2:        show.qml
 # Run:
 # lupdate-qt5 show.qml -ts calamares-auto_fr.ts
@@ -47,10 +47,10 @@ Source4:        calamares-auto_de.ts
 Source5:        calamares-auto_it.ts
 
 # adjust some default settings (default shipped .conf files)
-Patch0:         calamares-3.2.11-default-settings.patch
+# Patch0:         calamares-3.2.11-default-settings.patch
 
 # use kdesu instead of pkexec (works around #1171779)
-Patch1:         calamares-3.2.11-kdesu.patch
+# Patch1:         calamares-3.2.11-kdesu.patch
 
 # Calamares is only supported where live images (and GRUB) are. (#1171380)
 # This list matches the livearches global from anaconda.spec
@@ -211,10 +211,10 @@ developing custom modules for Calamares.
 
 %prep
 %setup -q %{?snaphash:-n %{name}-%{snaphash}} %{!?snaphash:%{?prerelease:-n %{name}-%{version}-%{prerelease}}}
-%patch0 -p1 -b .default-settings
+#%patch0 -p1 -b .default-settings
 # delete backup files so they don't get installed
-rm -f src/modules/*/*.conf.default-settings
-%patch1 -p1 -b .kdesu
+#rm -f src/modules/*/*.conf.default-settings
+#%patch1 -p1 -b .kdesu
 
 %build
 mkdir -p %{_target_platform}
