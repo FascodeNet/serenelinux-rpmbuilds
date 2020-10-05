@@ -150,7 +150,7 @@ Requires:       dnf
 Requires:       kdesu
 Requires:       hicolor-icon-theme
 
-Requires:       %{name}-libs%{?_isa} = %{version}-%{release}
+# Requires:       %{name}-libs%{?_isa} = %{version}-%{release}
 
 %description
 Calamares is a distribution-independent installer framework, designed to install
