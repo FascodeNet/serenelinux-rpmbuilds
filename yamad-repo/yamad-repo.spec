@@ -1,7 +1,7 @@
 Summary: yamad repo
 Name: yamad-repo
-Version: 1.0.2.2
-Release: 1%{?dist}
+Version: 1.0.2.4
+Release: 1
 Group: System Environment/Shells
 License: NONE
 Packager: kokkiemouse
@@ -23,6 +23,9 @@ name=yamad Repo
 baseurl=https://d.0u0.biz/repo/serene_fedora/
 gpgcheck=0
 enabled=1
+countme=1
+type=rpm
+metadata_expire=6h
 EOF
 %clean
 rm -rf %{buildroot}
