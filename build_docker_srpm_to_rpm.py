@@ -9,7 +9,7 @@ import sys
 def gen_rpm(conf_name):
     srpm_files =  glob.glob("./**/SRPMS/*.rpm")
     for srpm_f in srpm_files:
-        subprocess.call(["mock","--rebuild","-r",conf_name,srpm_f])
+        subprocess.call(["mock","-r",conf_name,srpm_f])
 def main():
     args = sys.argv
     gen_rpm(args[1])
