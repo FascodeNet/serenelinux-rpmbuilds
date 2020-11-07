@@ -4,7 +4,7 @@ MAINTAINER kokkiemouse <kokkiemouse@gmail.com>
 RUN dnf install -y mock rpmdevtools yum-utils patch git \
  && dnf clean all \
  && useradd mockbuild \
- && usermod mockbuild -a -G mock
+ && usermod mockbuild -a -G mock \
  && sudo -u mockbuild git clone https://github.com/FascodeNet/serenelinux-rpmbuilds.git /home/mockbuild/serenelinux-rpmbuilds
 
 #ADD bin/ /home/mockbuild/bin/
