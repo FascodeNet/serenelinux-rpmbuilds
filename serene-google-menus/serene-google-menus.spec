@@ -1,6 +1,6 @@
 Summary: serene google menus
 Name: serene-google-menus
-Version: 1.0.1
+Version: 1.0.2
 Release: 1%{?dist}
 Group: User Interface/Desktops
 License: NONE
@@ -15,11 +15,13 @@ serene-google-menus
 %prep
 rm -rf $RPM_BUILD_ROOT
 
-%autosetup -n %{name}
+%autosetup -n %{name}-master
 
 %build
 
 %install
+rm -rf DEBIAN
+rm -rf README.md
 cp -arf ./ $RPM_BUILD_ROOT/
 
 %clean
