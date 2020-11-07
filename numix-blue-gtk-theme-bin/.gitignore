@@ -1,0 +1,5 @@
+*.rpm
+*.gz
+*.log
+x86_64/
+numix-blue-gtk-theme-master/

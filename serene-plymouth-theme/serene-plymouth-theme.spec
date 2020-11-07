@@ -1,21 +1,21 @@
 Summary: serene-plymouth-theme
 Name: serene-plymouth-theme
-Version: 1.0.0
+Version: 1.0.1
 Release: 1%{?dist}
 Group: User Interface/Desktops
 License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 #https://github.com/FascodeNet/plymouth-theme-serene/archive/master.tar.gz
-Source: serene-plymouth-theme.tar.gz
+Source: https://github.com/FascodeNet/plymouth-theme-serene/archive/master.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-
+%global debug_package %{nil}
 %description
 serene-plymouth-theme
 %prep
 rm -rf $RPM_BUILD_ROOT
-
-%setup -n plymouth-theme-serene-master
+#rm -rf plymouth-theme-serene-master/debugsourcefiles.list
+%autosetup -n plymouth-theme-serene-master
 
 %build
 

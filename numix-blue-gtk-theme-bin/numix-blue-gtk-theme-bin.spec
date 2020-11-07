@@ -3,34 +3,28 @@
 Summary: numix-blue-gtk-theme-bin
 Name: numix-blue-gtk-theme-bin
 Version: 1.0.0
-Release: 1%{?dist}
+Release: 1
 Group: System Environment/Shells
 License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 
-Source: numix-blue-gtk-theme-master.tar.gz
-BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-
+Source0: https://github.com/encounter/numix-blue-gtk-theme/archive/master.tar.gz
+BuildRequires: rubygem-sass,glib2-devel,gdk-pixbuf2-devel,make
+%global debug_package %{nil}
 %description
 numix blue gtk
 %prep
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
-%setup -n %{name}
+%setup -n numix-blue-gtk-theme-master
 
 %build
-
 %install
-cp -arf ./ $RPM_BUILD_ROOT/
+DESTDIR=%{buildroot} make install
 
 %clean
-rm -rf $RPM_BUILD_ROOT
-
-%post
-
-%postun
-
+rm -rf %{buildroot}
 %files
-/usr/share/themes/Numix-Blue
+/usr/share/themes/Numix-Blue/*
 %changelog
