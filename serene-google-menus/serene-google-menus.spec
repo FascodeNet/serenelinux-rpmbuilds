@@ -7,7 +7,7 @@ License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 
-Source: serene-google-menus.tar.gz
+Source0: https://github.com/FascodeNet/serene-google-menus/archive/master.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -15,7 +15,7 @@ serene-google-menus
 %prep
 rm -rf $RPM_BUILD_ROOT
 
-%setup -n %{name}
+%autosetup -n %{name}
 
 %build
 
