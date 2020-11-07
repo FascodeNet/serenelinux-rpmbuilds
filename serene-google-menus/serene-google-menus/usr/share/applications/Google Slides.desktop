@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Google Slides
-Comment=A presentation program included as part of a free, web-based software office suite.
-Type=Application
-Exec=google-chrome --app=https://docs.google.com/presentation
-Icon=/usr/share/icons/google-app/1492616982-23-slide-show-presentation-google-file-service_83414.png
-Categories=GTK;Office;

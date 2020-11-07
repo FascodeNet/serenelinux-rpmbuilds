@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Google Sheets
-Comment=A spreadsheet program included as part of a free, web-based software office suite.
-Type=Application
-Exec=google-chrome --app=https://docs.google.com/spreadsheets
-Icon=/usr/share/icons/google-app/xofficespreadsheet_92797.png
-Categories=GTK;Office;

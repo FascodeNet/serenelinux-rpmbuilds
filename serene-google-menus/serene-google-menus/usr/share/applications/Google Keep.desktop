@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Google Keep
-Comment=A note-taking service.
-Type=Application
-Exec=google-chrome --app=https://keep.google.com/
-Icon=/usr/share/icons/google-app/Keep_29993.png
-Categories=GTK;Office;

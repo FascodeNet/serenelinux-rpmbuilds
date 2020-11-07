@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Google Calendar
-Comment=A time-management and scheduling calendar service.
-Type=Application
-Exec=google-chrome --app=https://calendar.google.com/calendar
-Icon=/usr/share/icons/google-app/1492616989-17-calender-schedule-time-management-control-day_83408.png
-Categories=GTK;Office;

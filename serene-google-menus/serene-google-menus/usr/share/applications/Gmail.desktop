@@ -1,8 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Gmail
-Comment=A free email service.
-Type=Application
-Exec=google-chrome --app=https://mail.google.com/mail/
-Icon=/usr/share/icons/google-app/Gmail_29991.png
-Categories=GTK;Office;
