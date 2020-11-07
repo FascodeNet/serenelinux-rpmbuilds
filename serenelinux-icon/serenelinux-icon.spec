@@ -7,7 +7,7 @@ License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 
-Source: serenelinux-icon.tar.gz
+Source0: https://github.com/FascodeNet/serenelinux-icon/archive/master.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 
 %description
@@ -15,11 +15,12 @@ serenelinux icon
 %prep
 rm -rf $RPM_BUILD_ROOT
 
-%setup -n %{name}
+%autosetup -n %{name}-master
 
 %build
 
 %install
+rm -rf README.md
 cp -arf ./ $RPM_BUILD_ROOT/
 
 %clean
