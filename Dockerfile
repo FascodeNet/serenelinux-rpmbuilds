@@ -1,7 +1,7 @@
 FROM fedora:33
 MAINTAINER kokkiemouse <kokkiemouse@gmail.com>
 
-RUN dnf install -y mock rpmdevtools yum-utils patch git \
+RUN dnf install -y mock rpmdevtools yum-utils patch git python \
  && dnf clean all \
  && useradd mockbuild \
  && usermod mockbuild -a -G mock 
