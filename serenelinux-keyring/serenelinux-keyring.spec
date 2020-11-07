@@ -7,7 +7,6 @@ Group:          System Environment/Base
 License:        GPLv2
 
 URL:            https://fascode.net
-Source1:        hylompkgs.repo
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
