@@ -9,7 +9,7 @@ Vendor: INDETAIL
 
 Source0: https://github.com/FascodeNet/serenelinux-wallpaper/archive/master.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-
+%global debug_package %{nil}
 %description
 serenelinux wallpaper
 %prep

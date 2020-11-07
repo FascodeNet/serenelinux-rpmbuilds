@@ -9,7 +9,7 @@ Vendor: INDETAIL
 
 Source0: https://github.com/FascodeNet/serene-google-menus/archive/master.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
-
+%global debug_package %{nil}
 %description
 serene-google-menus
 %prep
