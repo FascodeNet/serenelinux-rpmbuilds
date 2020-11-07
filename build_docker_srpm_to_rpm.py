@@ -2,12 +2,12 @@
 import subprocess
 import pathlib
 import os
-import shutil
+import glob
 import sys
 #def gen_srpm(specfile):
 #    subprocess.call(["spectool", "-g",specfile])
 def gen_rpm(conf_name):
-    srpm_files = os.listdir("/home/mockbuild/rpmbuild/SRPMS/")
+    srpm_files =  glob.glob("./**/SRPMS/*.rpm")
     for srpm_f in srpm_files:
         subprocess.call(["mock","--rebuild","-r",conf_name,srpm_f])
 def main():
