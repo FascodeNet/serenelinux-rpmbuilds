@@ -9,9 +9,12 @@ import glob
 #    subprocess.call(["spectool", "-g",specfile])
 def gen_srpm():
     spec_files =  glob.glob("./**/*.spec")
+    nowcd = os.getcwd()
     for spec_f in spec_files:
-        subprocess.call(["spectool", "-g",",-f","-C","SOURCES/",spec_f])
-        subprocess.call(["rpmbuild","--define","_topdir .","-bs",spec_f])
+        os.chdir(os.path.dirname(spec_f))
+        subprocess.call(["spectool", "-g",",-f","-C","SOURCES/",os.path.basename(spec_f)])
+        subprocess.call(["rpmbuild","--define","_topdir .","-bs",os.path.basename(spec_f)])
+        os.chdir(nowcd)
 def main():
     gen_srpm()
     
