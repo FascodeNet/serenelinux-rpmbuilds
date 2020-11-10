@@ -23,7 +23,8 @@ This package contains SereneFedora gpg keys.
 rm -rf rm -rf $RPM_BUILD_ROOT
 
 #GPG Key
-cat <<EOF > /etc/pki/rpm-gpg/RPM-GPG-KEY-serene
+mkdir -p %{buildroot}/etc/pki/rpm-gpg/
+cat <<EOF > %{buildroot}/etc/pki/rpm-gpg/RPM-GPG-KEY-serene
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBF5hxAoBEAC/znZLMgfgPLW6SChas73vKi7iTnyymaak5sE4Iw2tBy4psDyK
@@ -124,7 +125,7 @@ Thd9Fs53ymobBB90njf0ZdFP//Vr4ai/+XB2slDsO3Q6G8MGWMDb3PxbsIokh7aK
 =aisb
 -----END PGP PUBLIC KEY BLOCK-----
 EOF
-chmod 644 /etc/pki/rpm-gpg/RPM-GPG-KEY-serene
+chmod 644 %{buildroot}/etc/pki/rpm-gpg/RPM-GPG-KEY-serene
 
 %clean
 rm -rf rm -rf $RPM_BUILD_ROOT
