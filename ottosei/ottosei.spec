@@ -34,5 +34,5 @@ rm -rf %{buildroot}
 /usr/share/serene/ottosei/
 /usr/bin/ottosei
 %changelog
-Nov 15th,2020 09:05
-fixed background bug
+* Sun Nov 15 2020 kokkiemouse <kokkiemouse@fascode.net> 1.0.1-1 
+- fixed background bug
