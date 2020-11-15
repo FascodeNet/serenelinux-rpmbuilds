@@ -2,7 +2,7 @@
 
 Summary: ottosei
 Name: ottosei
-Version: 1.0.0
+Version: 1.0.1
 Release: 1
 Group: System Environment/Shells
 License: NONE
@@ -34,3 +34,5 @@ rm -rf %{buildroot}
 /usr/share/serene/ottosei/
 /usr/bin/ottosei
 %changelog
+Nov 15th,2020 09:05
+fixed background bug
