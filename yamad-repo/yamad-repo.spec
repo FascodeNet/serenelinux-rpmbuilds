@@ -1,12 +1,12 @@
 Summary: yamad repo
 Name: yamad-repo
-Version: 1.0.2.4
+Version: 1.0.2.5
 Release: 1
 Group: System Environment/Shells
 License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
-
+Requires:   serenelinux-keyring
 %global debug_package %{nil}
 %description
 yamad repo
@@ -19,13 +19,14 @@ rm -rf %{buildroot}
 mkdir -p %{buildroot}/etc/yum.repos.d/
 cat <<'EOF' > %{buildroot}/etc/yum.repos.d/yamad.repo
 [yamad]
-name=yamad Repo
-baseurl=https://d.0u0.biz/repo/serene_fedora/
-gpgcheck=0
+name=yamad Repo $releasever
+baseurl=https://d.0u0.biz/repo/serenelinux_fedora/$releasever/
+gpgcheck=1
 enabled=1
 countme=1
 type=rpm
 metadata_expire=6h
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-serene
 EOF
 %clean
 rm -rf %{buildroot}
