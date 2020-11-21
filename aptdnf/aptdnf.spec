@@ -9,7 +9,7 @@ License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 
-Source0: https://github.com/FascodeNet/aptdnf/archive/master.tar.gz
+Source0: https://github.com/FascodeNet/aptdnf/archive/main.tar.gz
 BuildRequires: cmake,ninja-build,clang
 %global debug_package %{nil}
 %description
@@ -17,7 +17,7 @@ ottosei
 %prep
 rm -rf %{buildroot}
 
-%setup -n aptdnf-master
+%setup -n aptdnf-main
 
 %build
 mkdir -p build
