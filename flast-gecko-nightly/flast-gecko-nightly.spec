@@ -25,7 +25,7 @@ mkdir -p $RPM_BUILD_ROOT/opt/flast-gecko-nightly/distribution/
 mkdir -p $RPM_BUILD_ROOT/usr/bin/
 mkdir -p $RPM_BUILD_ROOT/usr/share/applications
 cp -arf ./ $RPM_BUILD_ROOT/opt/flast-gecko-nightly/
-ln -s /opt/flast-gecko-nightly/firefox $RPM_BUILD_ROOT/usr/bin/flast-gecko
+ln -s /opt/flast-gecko-nightly/firefox $RPM_BUILD_ROOT/usr/bin/flast-gecko-nightly
 cat <<EOF > $RPM_BUILD_ROOT/opt/flast-gecko-nightly/distribution/policies.json
 {
   "policies": {
@@ -357,5 +357,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 /usr/bin/
 /usr/share/
-/opt/flast-gecko/
+/opt/flast-gecko-nightly/
 %changelog
