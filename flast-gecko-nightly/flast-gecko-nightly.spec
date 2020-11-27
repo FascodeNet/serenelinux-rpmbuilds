@@ -1,6 +1,6 @@
 Summary: Flast Gecko Nightly Build
 Name: flast-gecko-nightly
-Version: 85.0a1-2020-11-27-21-22
+Version: 85.0a1
 Release: 1%{?dist}
 Group: User Interface/Desktops
 License: NONE
