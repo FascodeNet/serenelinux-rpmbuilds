@@ -15,7 +15,7 @@ Flast Browser on Gecko
 %prep
 rm -rf $RPM_BUILD_ROOT
 
-%autosetup -n %{name}-master
+%autosetup -n flast-gecko-master
 
 %build
 
