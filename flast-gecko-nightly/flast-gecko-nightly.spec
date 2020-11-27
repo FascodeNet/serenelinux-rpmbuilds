@@ -6,7 +6,7 @@ Group: User Interface/Desktops
 License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
-
+%undefine __brp_mangle_shebangs
 Source0: https://github.com/FascodeNet/flast-gecko/releases/download/2020-11-27-21-22/firefox.ja.linux-x86_64.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 %global debug_package %{nil}
