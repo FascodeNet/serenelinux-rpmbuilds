@@ -15,7 +15,7 @@ Flast Browser on Gecko
 %prep
 rm -rf $RPM_BUILD_ROOT
 
-%autosetup -n flast-gecko-master
+%autosetup -n firefox
 
 %build
 
@@ -24,7 +24,7 @@ mkdir -p $RPM_BUILD_ROOT/opt/flast-gecko-nightly/
 mkdir -p $RPM_BUILD_ROOT/opt/flast-gecko-nightly/distribution/
 mkdir -p $RPM_BUILD_ROOT/usr/bin/
 mkdir -p $RPM_BUILD_ROOT/usr/share/applications
-cp -arf ./firefox/ $RPM_BUILD_ROOT/opt/flast-gecko-nightly/
+cp -arf ./ $RPM_BUILD_ROOT/opt/flast-gecko-nightly/
 ln -s /opt/flast-gecko-nightly/firefox $RPM_BUILD_ROOT/usr/bin/flast-gecko
 cat <<EOF > $RPM_BUILD_ROOT/opt/flast-gecko-nightly/distribution/policies.json
 {
