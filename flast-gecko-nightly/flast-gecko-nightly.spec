@@ -1,6 +1,6 @@
 Summary: Flast Gecko Nightly Build
 Name: flast-gecko-nightly
-Version: 85.0a1
+Version: 85.0a1a
 Release: 1%{?dist}
 Group: User Interface/Desktops
 License: NONE
@@ -355,7 +355,7 @@ rm -rf $RPM_BUILD_ROOT
 %postun
 
 %files
-/usr/bin/
-/usr/share/
+/usr/bin/flast-gecko-nightly
+/usr/share/application/flast-gecko-nightly.desktop
 /opt/flast-gecko-nightly/
 %changelog
