@@ -1,13 +1,13 @@
 Summary: Flast Gecko Nightly Build
 Name: flast-gecko-nightly
-Version: 85.0a1a
-Release: 1%{?dist}
+Version: 85.0a1
+Release: 2%{?dist}
 Group: User Interface/Desktops
 License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 %undefine __brp_mangle_shebangs
-Source0: https://github.com/FascodeNet/flast-gecko/releases/download/2020-11-27-21-22/firefox.ja.linux-x86_64.tar.bz2
+Source0: https://github.com/FascodeNet/flast-gecko/releases/download/2020-11-29-23-38/firefox.ja.linux-x86_64.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 %global debug_package %{nil}
 %description
@@ -82,7 +82,7 @@ Comment[ar]=تصفح الوِب
 Comment[ast]=Restola pela Rede
 Comment[bn]=ইন্টারনেট ব্রাউজ করুন
 Comment[ca]=Navegueu per el web
-Comment[cs]=Prohlížení stránek World Wide Webu
+Comment[cs]=Prohlížení stránek World Wide Web
 Comment[da]=Surf på internettet
 Comment[de]=Im Internet surfen
 Comment[el]=Μπορείτε να περιηγηθείτε στο διαδίκτυο (Web)
