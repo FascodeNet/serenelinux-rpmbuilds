@@ -356,6 +356,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 /usr/bin/flast-gecko-nightly
-/usr/share/application/flast-gecko-nightly.desktop
+/usr/share/applications/flast-gecko-nightly.desktop
 /opt/flast-gecko-nightly/
 %changelog
