@@ -1,6 +1,6 @@
 Summary: serenelinux icon
 Name: serenelinux-icon
-Version: 1.0.2
+Version: 1.0.3
 Release: 1%{?dist}
 Group: User Interface/Desktops
 License: NONE
