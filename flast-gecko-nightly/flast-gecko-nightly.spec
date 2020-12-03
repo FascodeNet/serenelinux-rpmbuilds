@@ -1,13 +1,13 @@
 Summary: Flast Gecko Nightly Build
 Name: flast-gecko-nightly
 Version: 85.0a1
-Release: 3%{?dist}
+Release: 4%{?dist}
 Group: User Interface/Desktops
 License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 %undefine __brp_mangle_shebangs
-Source0: https://github.com/FascodeNet/flast-gecko/releases/download/2020-11-30-19-51/firefox.ja.linux-x86_64.tar.bz2
+Source0: https://github.com/FascodeNet/flast-gecko/releases/download/2020-12-04-00-26/firefox.ja.linux-x86_64.tar.bz2
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 %global debug_package %{nil}
 %description
