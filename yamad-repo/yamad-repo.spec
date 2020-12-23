@@ -1,6 +1,6 @@
 Summary: yamad repo
 Name: yamad-repo
-Version: 1.0.2.5
+Version: 1.0.2.6
 Release: 1
 Group: System Environment/Shells
 License: NONE
@@ -20,7 +20,7 @@ mkdir -p %{buildroot}/etc/yum.repos.d/
 cat <<'EOF' > %{buildroot}/etc/yum.repos.d/yamad.repo
 [yamad]
 name=yamad Repo $releasever
-baseurl=https://d.0u0.biz/repo/serenelinux_fedora/$releasever/
+baseurl=https://repo.dyama.net/serenelinux_fedora/$releasever/
 gpgcheck=1
 enabled=1
 countme=1
