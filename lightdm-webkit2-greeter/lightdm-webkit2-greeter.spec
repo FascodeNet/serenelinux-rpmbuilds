@@ -26,11 +26,11 @@ Source0:       https://github.com/Antergos/web-greeter/archive/2.2.5.tar.gz
 
 BuildRequires: gettext
 BuildRequires: meson
-BuildRequires: pkgconfig(gtk+-3.0)
-BuildRequires: pkgconfig(webkit2gtk-4.0)
-BuildRequires: pkgconfig(dbus-glib-1)
-BuildRequires: pkgconfig(liblightdm-gobject-1)
-BuildRequires: pkgconfig(x11)
+BuildRequires: gtk2
+BuildRequires: webkit2gtk3-devel
+BuildRequires: dbus-x11
+BuildRequires: lightdm-gobject
+BuildRequires: libX11
 
 %if %{defined suse_version}
 Requires:      libwebkit2gtk-4_0-37
