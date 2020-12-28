@@ -29,20 +29,13 @@ BuildRequires: meson
 BuildRequires: gtk2
 BuildRequires: webkit2gtk3-devel
 BuildRequires: dbus-x11
-BuildRequires: lightdm-gobject
+BuildRequires: lightdm-gobject-devel
 BuildRequires: libX11
-
-%if %{defined suse_version}
-Requires:      libwebkit2gtk-4_0-37
-Requires:      libgtk-3-0
-Requires:      liblightdm-gobject-1-0
-%endif
-
-%if %{defined fedora}
+BuildRequires: clang
+BuildRequires: dbus-glib-devel
 Requires:      webkitgtk4
 Requires:      gtk3
 Requires:      lightdm-gobject
-%endif
 
 Requires:      lightdm
 Requires:      accountsservice
@@ -62,7 +55,7 @@ Conflicts:      lightdm-webkit-greeter
 
 %build
 cd build
-CFLAGS='-DHAS_WEBKITGTK_2_14=1 -DHAS_WEBKITGTK_2_14_4=1' meson --prefix=/usr --libdir=%{_libdir} ..
+CFLAGS='-DHAS_WEBKITGTK_2_14=1 -DHAS_WEBKITGTK_2_14_4=1' CXX=clang++ meson --prefix=/usr --libdir=%{_libdir} ..
 
 %if %{defined fedora}
 ninja-build
