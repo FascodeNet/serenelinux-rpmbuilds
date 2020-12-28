@@ -22,7 +22,7 @@ Group:         System/X11/Displaymanagers
 
 License:       GPL-3.0+
 URL:           http://github.com/antergos/lightdm-webkit2-greeter
-Source0:       2.2.5.tar.gz
+Source0:       https://github.com/Antergos/web-greeter/archive/2.2.5.tar.gz
 
 BuildRequires: gettext
 BuildRequires: meson
@@ -53,7 +53,6 @@ Requires(postun): /usr/sbin/update-alternatives
 Provides:       lightdm-greeter
 Provides:       lightdm-webkit-greeter
 Conflicts:      lightdm-webkit-greeter
-Obsoletes:      lightdm-webkit-greeter
 
 %description
 
