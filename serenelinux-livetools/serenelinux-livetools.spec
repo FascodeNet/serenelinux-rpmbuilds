@@ -7,7 +7,7 @@ License: NONE
 Packager: kokkiemouse
 Vendor: INDETAIL
 
-Source0: https://github.com/FascodeNet/serenelinux-livetools/archive/985db11.tar.gz
+Source0: https://github.com/FascodeNet/serenelinux-livetools/archive/master.tar.gz
 BuildRoot: %{_tmppath}/%{name}-%{version}-buildroot
 %global debug_package %{nil}
 %description
