@@ -12,7 +12,7 @@ def gen_srpm():
     nowcd = os.getcwd()
     for spec_f in spec_files:
         os.chdir(os.path.dirname(spec_f))
-        subprocess.call(["spectool", "-g","-f","-C","SOURCES/",os.path.basename(spec_f)])
+        subprocess.call(["rpmdev-spectool", "-g","-f","-C","SOURCES/",os.path.basename(spec_f)])
         subprocess.call(["rpmbuild","--define","_topdir .","-bs",os.path.basename(spec_f)])
         os.chdir(nowcd)
 def main():
